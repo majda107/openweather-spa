@@ -22,9 +22,14 @@ body {
 
 .app {
     margin: 10vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 6px;
+    /* margin-bottom: 40px; */
+    padding-bottom: 36px;
+    /* grid-template-rows: auto auto auto auto auto auto auto 1fr; */
+    /* flex-wrap: wrap;
+    flex-flow: column; */
     /* grid-auto-flow: row;
     grid-template-columns: 100%;
     grid-template-rows: auto 20px auto auto auto; */
@@ -38,8 +43,8 @@ body {
     width: 500px;
     padding-left: 30px;
     padding-right: 30px;
-    height: 80vh;
-    min-height: 1160px;
+    /* height: 80vh; */
+    min-height: 600px;
     border-radius: 20px;
     -webkit-box-shadow: 18px 25px 72px -1px rgba(0,0,0,0.51);
     -moz-box-shadow: 18px 25px 72px -1px rgba(0,0,0,0.51);
@@ -153,7 +158,7 @@ button:focus {
     justify-content: center;
     align-content: center;
 
-    height: 500px;
+    height: 700px;
 }
 
 .map > iframe{
@@ -168,6 +173,33 @@ button:focus {
 }
 
 
+@media only screen and (max-width: 800px) {
+    .app {
+        width: 90vw;
+        padding: 0;
+        margin: 0;
+        margin-top: 4vh;
+        height: auto;
+        margin-bottom: 40vh;
+        /* display: none; */
+        /* background-color: red; */
+    }
+
+
+    .data {
+        margin: 20px;
+    }
+    
+    .map {
+        margin: 20px;
+    }
+
+    button {
+        white-space: normal;
+    }
+}
+
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -179,3 +211,4 @@ button:focus {
 		background-position: 0% 50%;
 	}
 }
+
