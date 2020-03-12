@@ -1,0 +1,1 @@
+# Probably worst VUE SPA OpenWeather api implementation (schoolwork) #
